@@ -10,12 +10,21 @@
 <body>
     <div class="container">
         <div class="left-buttons">
-            <button class="colorPicker">Choose color</button>
+            <div class="colorPickerdiv">
+                <label for="colorPicker"> Color Picker</label>
+                <input type="color" class="colorPicker" id="colorPicker">
+            </div>
             <input type="range" min="16" max="124" step="1" value="16">
-            <p class="currentGridSize"></p>
+            <p class="currentGridSize"> 16x16 </p>
+            <button class="randomColor">Rainbow mode</button>
         </div>
         <div class="canvas"></div>
-        <div class="right-buttons"></div>
+        <div class="right-buttons">
+            <button class="mordernArt">Mordern Art</button>
+            <button class="eraser">Eraser</button>
+            <button class="eraseAll">Erase All</button>
+            <button class="save">Save</button>
+        </div>
     </div>
 </body>
 </html>
