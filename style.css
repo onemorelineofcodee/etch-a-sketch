@@ -11,22 +11,80 @@
     justify-content: space-around;
     align-items: center;
     margin-top: 10vh;
+    justify-content: center;
 }
 
 .canvas{
     width : 600px;
     height: 600px;
+    flex : 0 0 auto;
 }
 
 .left-buttons , .right-buttons {
-    flex : 1;
+    flex : 0;
     display : flex;
     flex-direction: column;
     height: 600px;
+    font-family: "Roboto Mono", monospace;
+    text-align: center;
+    font-size: 26px;
+    font-weight: 600;
    
 }
 
 .left-buttons > *, .right-buttons > *{
     flex : 1;
+    padding : 10px;
+    margin : 1vw;
+    width : 15vw;
+}
+
+
+
+.colorPickerdiv label {
+    display: block;
     
+
+}
+
+.colorPickerdiv input {
+    width : 100% ;
+    height: 50px;
+}
+
+button {
+    font-family: "Roboto Mono", monospace;
+    text-align: center;
+    font-size: 26px;
+    font-weight: 600;
+}
+
+.chooseGridSize input {
+    width : 100%;
+    height : 10px;
+}
+
+.left-buttons , .right-buttons , .left-buttons > * ,
+.right-buttons > * , .canvas {
+    border : 2px solid black ;
+
+}
+
+button {
+    border-radius: 10px;
+}
+button:hover {
+    background-color: aqua;
+}
+
+button:active {
+    box-shadow: 0px 0px 50px 10px rgba(2, 54, 36, 0.4) inset ;
+    border-radius: 15px;
+}
+
+.currentGridSize {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 52px;
 }
