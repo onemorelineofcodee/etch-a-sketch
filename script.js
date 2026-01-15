@@ -90,8 +90,9 @@ let colorPicker = document.querySelector(".colorPicker");
 colorPicker.addEventListener("change",(e)=>{
     if(eraser){
         eraser = !eraser;
+        eraserMode.classList.toggle("pinned"); 
     };
-    eraserMode.classList.toggle("pinned");  
+     
 })
 
 
